@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+    padding:0;
+    background-color: black;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin:auto;
+   padding: 0px 20px;
+   
+}
+.nav h2{
+    font-weight:900;
+    font-size: 28px;
+    color:white;
+}
+.nav span{
+    color: #e76102;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:2rem ;
+    gap: 3rem;
+}
+li.active::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #6f4e37;
+    display: flex;
+    position: relative;
+   
+}
+.nav li{
+    list-style-type: none;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+}
+.nav a:hover{
+    color: #6f4e37;
+}
+button{
+    border:1px solid #e76102;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+button:hover{
+    color: #fff;
+    background-color:#6f4e37 ;
+}
+
+/*hero section begins */
+
+.hero{
+    background-image: url(images/headphone2.jpg);
+    background-size: cover;
+    height: 90vh;
+    padding: 30px 4rem;
+    margin: auto;
+    color: #fff;
+}
+.hero h1{
+    font-size: 55px;
+    
+}
+.hero p{
+    font-size:25px;
+    width: 40%;
+    line-height: 1.5;
+    color: white;
+}
+.hero button{
+    padding: 15px;
+    color: black;
+    border:1px solid white;
+
+}
+
+/* features begin........*/
+#feature h2{
+    text-align: center;
+    color: #e76102;
+    margin-top: 70px;
+    margin-bottom: 2px;
+    font-size: 30px;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px;
+
+
+}
+.feature .container{
+    flex: 1 1 rem;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 2px solid #f1b183;
+    border-radius: 10px;
+    width: calc(28.28% - 20px);
+    margin-bottom: 15px;
+    text-align: center;
+    cursor: pointer;
+
+}
+.feature .container:hover{
+    box-shadow: 0 1rem 2rem rgba(223, 196, 180, 0.801);
+}
+
+.feature .card i{
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #e76102;
+}
+.feature .card h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.feature .card p{
+    font-size: 16px;
+    color: #000;
+}
+
+/*pricing..................*/
+
+#pricing, .contact-us h2{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 2px;
+    font-size: 30px;
+    color: #e76102;
+}
+.pricing .box{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    row-gap: 4px;
+    column-gap: 30px;
+    
+}
+
+.pricing .container{
+    object-fit:cover;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 1rem 1rem white;
+    margin-bottom: 70px;
+}
+
+.pricing .container img{
+    height: 17rem;
+    width:100%;
+    border-radius: 15px;
+    -webkit-filter: drop-shadow(5px 5px 5px #161616);
+  filter: drop-shadow(5px 5px 5px #0f0f0f)
+  }
+ 
+  .pricing .container .content p{
+    font-size:1.7rem;
+    color:#000;
+    text-align: center;
+  }
+ 
+  .pricing .container  .content .price{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    color:#333;
+    margin-top: -15px;
+    text-align: center;
+    padding: 3px;
+  }
+  .pricing .container  .content a{
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px;
+    background-color:#e76102 ;
+  }
+  .pricing .content a:hover{
+    background-color: saddlebrown;
+  }
+  
+
+  /*.....contact us style.....*/
+
+  .contact-us .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    align-items: center;
+    padding: 50px;
+  }
+  .contact-us .text i{
+    color: #e76102;
+    font-size: 22px;
+  }
+
+  .contact-us .input{
+    padding: 5px;
+  
+  }
+  .contact-us .input input, textarea{
+    border-radius: 5px;
+    padding: 20px;
+    outline: none;
+    width: 19rem;
+    
+  }
+  .contact-us .container img{
+    height: 15rem;
+    width: 20rem;
+    border-radius: 20%;
+  }
+  .contact-us button{
+    width: 350px;
+    padding: 10px;
+  }
+  
+  /*footer..............*/
+.footer{
+    background-color: #e7b592;
+    margin: 30px;
+    border-radius: 10px;
+}
+.footer-box{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-box h4{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+.footer-box h5, p{
+    font-size: 16px;
+    color: #222222;
+}
+.footer-box .about span{
+    color: #e76102;
+}
+.footer-box .about .about-text{
+    
+}
+.footer .link ul, a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px;
+    line-height: 1.5;
+}
+.footer .link a:hover{
+    color: #fff;
+}
+.copyright{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+.copyright .icon{
+    display: inline-flex;
+    gap: 30px;
+    color: black;
+    cursor: pointer;
+}
