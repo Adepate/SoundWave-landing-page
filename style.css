@@ -8,10 +8,12 @@ body{
 }
 
 .nav{
+    position: sticky;
+    top: 0;
+    background-color: #0f0f0f;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
-   max-width: 1200px;
    margin:auto;
    padding: 0px 20px;
    
@@ -53,7 +55,7 @@ li.active::after{
 .nav a:hover{
     color: #6f4e37;
 }
-button{
+.nav button{
     border:1px solid #e76102;
     border-radius: 20px;
     font-size: 20px;
